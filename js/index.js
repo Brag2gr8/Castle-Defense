@@ -58,8 +58,8 @@ function endGame() {
                     <h2>Game Over</h2> 
                     <h3>${endMessage}</h3>
                     <p class="end-emoji">${endEmoji}</p>
+                    <button id="new-game">New Game</button>
                 </div>
-                <button id="new-game">New Game</button>
                 `
                 wizard.health > 0 ? win.play() : loose.play()
         }, 1500)
