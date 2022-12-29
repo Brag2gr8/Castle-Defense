@@ -155,6 +155,28 @@ button:focus { outline: 0 }
     font-size: 80px;
 }
 
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: black;
+    font-weight: bold;
+    background: #E27135;
+    text-align: center;
+    border: 10px solid #fff;
+    padding: 2em;
+    position:fixed;
+    border-radius: 2em;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+}
+.modal h1  { color: inherit }
+.modal div { text-align: left }
+.hide      { display: none }
+
 @media(min-width:550px){
     main {
          flex-direction: row;
@@ -174,10 +196,9 @@ button:focus { outline: 0 }
      .character-card {
         height: 100%;
      }
- 
-     /* @media(min-width:550px){
-         .health {
-             margin: 2vh 5%;
-         }
-     } */
+
+     .modal {
+        padding: 10em;
+     }
  }
+
