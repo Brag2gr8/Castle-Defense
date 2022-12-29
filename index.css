@@ -20,16 +20,6 @@ main {
     margin-top: .5rem;
 } 
 
-@media(min-width:550px){
-   main {
-        flex-direction: row;
-        margin:6vh 5vw;
-        justify-content: center;
-        width:86vw;
-        gap: 2rem;
-    } 
-}
-
 .character-card {
     display: flex;
     flex-direction: column;
@@ -62,15 +52,9 @@ main {
     font-size: 90%;
 }
 
-@media(min-width:550px){
-    .name {
-    margin: 2vh 0;
-    font-size: 100%;
-}
-}
 
 .avatar {
-    margin: 0 auto;
+    margin: 0.5em auto;
     width: 35vh;
     border: 2px solid #000721;
     max-width:80%;
@@ -79,25 +63,13 @@ main {
     background: #fff;
 }
 
-@media(min-width:550px){
-    .avatar {
-        width: 25vh;
-    }
-}
 
 .health {
     font-size:1.1rem;
     font-weight: normal;
     width:90%;
     text-align: left;
-    margin: 1vh ;
     letter-spacing: 0.03em
-}
-
-@media(min-width:550px){
-    .health {
-        margin: 2vh 5%;
-    }
 }
 
 .health b {
@@ -112,13 +84,13 @@ main {
     border-radius: 2px;
 }
 
-.health-bar-outer .health-bar-inner {
+.health-bar-inner {
     background: #39D31E;
     height: 100%;
     border-radius: 2px;
 }
 
-.health-bar-outer .health-bar-inner.danger {
+.danger {
     background: #FF1212;
 }
 
@@ -152,7 +124,7 @@ main {
 
 
 
-.dice-container .placeholder-dice{
+.placeholder-dice{
     background-color: transparent;
 }
 
@@ -185,3 +157,26 @@ button:focus { outline: 0 }
 .end-emoji{
     font-size: 80px;
 }
+
+@media(min-width:550px){
+    main {
+         flex-direction: row;
+         margin:6vh 5vw;
+         justify-content: center;
+         width:86vw;
+         gap: 2rem;
+     } 
+     .name {
+         margin: 2vh 0;
+         font-size: 100%;
+     }
+     .avatar {
+         width: 25vh;
+     }
+ 
+     @media(min-width:550px){
+         .health {
+             margin: 2vh 5%;
+         }
+     }
+ }
