@@ -47,11 +47,11 @@ function attack() {
 function endGame() {
     isWaiting = true
     const endMessage = wizard.health === 0 && monster.health === 0 ?
-        "NO VICTORS - THE WIZARD AND THE MONSTERS DIED " :
+        "NO VICTORS - THE WIZARD AND ALL MONSTERS DIED " :
         wizard.health > 0 ? "THE WIZARD WON THE CASTLE IS SAFE" :
             "THE MONSTERS DEFEATED THE WIZARD"
 
-    const endEmoji = wizard.health > 0 ? "💚" : "☠️"
+    const endEmoji = wizard.health > 0 ? "🎉🎉" : "💀💀"
         setTimeout(()=>{
             document.body.innerHTML = `
                 <div class="end-game">
