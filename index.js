@@ -3,11 +3,13 @@ import Character from './Character.js'
 
 let monstersArray = ["orc", "demon", "goblin"]
 let isWaiting = false
+const sound = new Audio("/dice.mp3")
 
 function getNewMonster() {
     const nextMonsterData = characterData[monstersArray.shift()]
     return nextMonsterData ? new Character(nextMonsterData) : {}
 }
+
 
 function attack() {
     if(!isWaiting){
@@ -15,6 +17,7 @@ function attack() {
         monster.setDiceHtml()
         wizard.takeDamage(monster.currentDiceScore)
         monster.takeDamage(wizard.currentDiceScore)
+        sound.play()
         render()
         
         if(wizard.dead){
@@ -25,6 +28,7 @@ function attack() {
             if(monstersArray.length > 0){
                 setTimeout(()=>{
                     monster = getNewMonster()
+                    sound.play()
                     render()
                     isWaiting = false
                 },1500)
@@ -34,6 +38,7 @@ function attack() {
             }
         }    
     }
+    
 }
 
 function endGame() {
@@ -67,6 +72,10 @@ function render() {
     document.getElementById('hero').innerHTML = wizard.getCharacterHtml()
     document.getElementById('monster').innerHTML = monster.getCharacterHtml()
 }
+
+document.getElementById("modal-btn").addEventListener('click',() => {
+    document.getElementById("modal").classList.add("hide")
+})
 
 const wizard = new Character(characterData.hero)
 let monster = getNewMonster()
