@@ -23,7 +23,7 @@ main {
 .character-card {
     display: flex;
     flex-direction: column;
-    height:50vh;
+    height:100%;
     margin-top: .5rem;
     width:100%;
     max-width: 230px;
