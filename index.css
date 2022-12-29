@@ -27,11 +27,9 @@ main {
     margin-top: .5rem;
     width:100%;
     max-width: 230px;
-    padding: 1vh 1vw;
     font-size: 1.6rem;
     color: #000;
     border-radius: 14px;
-    position: relative;
     background: #209CDF;
     text-align: center;
     border: 0.08rem solid #000721;
@@ -65,7 +63,7 @@ main {
 
 
 .health {
-    margin: 0.5em 0;
+    margin: 0.3em 0.5em;
     font-size:1.1rem;
     font-weight: normal;
     width:90%;
@@ -96,19 +94,16 @@ main {
 }
 
 .dice-container {
+    margin-top: 0.3em;
     width:100%;
     height: 20%;
-    position: absolute;
-    bottom:0;
-    left:0px;
-    right:0;
     background: #000721;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: .5rem;
-    border-bottom-left-radius: 14px;
-    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
 }
 
 
@@ -174,10 +169,14 @@ button:focus { outline: 0 }
      .avatar {
          width: 25vh;
      }
+
+     .character-card {
+        height: 100%;
+     }
  
-     @media(min-width:550px){
+     /* @media(min-width:550px){
          .health {
              margin: 2vh 5%;
          }
-     }
+     } */
  }
