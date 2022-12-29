@@ -6,6 +6,7 @@ let isWaiting = false
 const dice = new Audio("/audio/dice.mp3")
 const win = new Audio("/audio/win.mp3")
 const loose = new Audio("/audio/loose.mp3")
+const battle = new Audio("/audio/battle.mp3")
 
 function getNewMonster() {
     const nextMonsterData = characterData[monstersArray.shift()]
@@ -50,7 +51,7 @@ function endGame() {
         wizard.health > 0 ? "THE WIZARD WON THE CASTLE IS SAFE" :
             "THE MONSTERS DEFEATED THE WIZARD"
 
-    const endEmoji = wizard.health > 0 ? 🎉🎉" : "💀💀"
+    const endEmoji = wizard.health > 0 ? "💚" : "☠️"
         setTimeout(()=>{
             document.body.innerHTML = `
                 <div class="end-game">
@@ -84,3 +85,4 @@ document.getElementById("modal-btn").addEventListener('click',() => {
 const wizard = new Character(characterData.hero)
 let monster = getNewMonster()
 render()
+battle.play()
