@@ -147,7 +147,7 @@ button {
 button:focus { outline: 0 }
 
 .end-game{
-    margin-top: 25%;
+    padding: 25%;
     text-align: center;
 }
 
