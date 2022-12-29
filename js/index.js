@@ -50,7 +50,7 @@ function endGame() {
         wizard.health > 0 ? "THE WIZARD WON THE CASTLE IS SAFE" :
             "THE MONSTERS DEFEATED THE WIZARD"
 
-    const endEmoji = wizard.health > 0 ? "💚" : "☠️"
+    const endEmoji = wizard.health > 0 ? 🎉🎉" : "💀💀"
         setTimeout(()=>{
             document.body.innerHTML = `
                 <div class="end-game">
