@@ -1,4 +1,8 @@
-html, body {
+* {
+    box-sizing: border-box;
+}
+
+body {
     padding: 0;
     margin: 0;    
     background: #974316;
@@ -27,9 +31,9 @@ main {
 }
 
 .character-card {
-    height:14rem;
+    height:50vh;
     margin-top: .5rem;
-    width:94vw;
+    width:100%;
     max-width: 230px;
     padding: 1vh 1vw;
     font-size: 1.6rem;
@@ -43,19 +47,9 @@ main {
                 0px 0px 10px rgba(117,182,214,0.2);
 }
 
-@media(min-width:550px){
-    .character-card {
-        border: 0.2rem solid #000721;
-        height:26rem;
-        width:37vw;
-    }
-}
-
 .title, h1 {
     font-weight: bold;
-    background: #FFFFFF;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #FFFFFF;
 }
 .title {font-size: 2.8em}
 
@@ -74,9 +68,9 @@ main {
 }
 
 .avatar {
-    width: 15vh;
+    width: 35vh;
     border: 2px solid #000721;
-    max-width:100%;
+    max-width:80%;
     opacity: 0.8;
     border-radius: 10px;
     background: #fff;
@@ -93,7 +87,7 @@ main {
     font-weight: normal;
     width:90%;
     text-align: left;
-    margin: 1vh 5%;
+    margin: 1vh ;
     letter-spacing: 0.03em
 }
 
@@ -141,13 +135,6 @@ main {
     border-bottom-right-radius: 14px;
 }
 
-@media(min-width:550px){
-    .dice-container {
-        height: 30%;
-        border-bottom-left-radius: 3px;
-        border-bottom-right-radius: 3px;
-    }
-}
 
 .dice, .placeholder-dice{
     height:5.5vh;
@@ -160,13 +147,7 @@ main {
     line-height: 6vh;
 }
 
-@media(min-width:550px){
-.dice-container .dice, .dice-container .placeholder-dice{
-    height:10vh;
-    width:10vh;
-    line-height: 10.5vh;
-}
-}
+
 
 .dice-container .placeholder-dice{
     background-color: transparent;
@@ -190,13 +171,6 @@ button {
     height:9vh;
     box-shadow: 0px 6px 10px -4px #000;
 }
-
-@media(min-width:550px){
-    button {
-        margin-top: 0;
-    }
-}
-
 
 button:focus { outline: 0 }
 
