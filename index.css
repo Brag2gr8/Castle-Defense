@@ -31,6 +31,8 @@ main {
 }
 
 .character-card {
+    display: flex;
+    flex-direction: column;
     height:50vh;
     margin-top: .5rem;
     width:100%;
@@ -68,6 +70,7 @@ main {
 }
 
 .avatar {
+    margin: 0 auto;
     width: 35vh;
     border: 2px solid #000721;
     max-width:80%;
