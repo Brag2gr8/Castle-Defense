@@ -9,9 +9,17 @@
     </head>
     <body>
         <header>
+            <audio autoplay>
+                <source src="battle.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
             <h1 class="title">CASTLE DEFENSE</h1>
         </header>
         <main>
+            <audio autoplay>
+                <source src="/battle.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
             <div id="hero">              
             </div>
             <h1>VS</h1>
@@ -23,4 +31,21 @@
         </section>
         <script type="module" src="/index.js"></script>
     </body>
+    <div class="modal" id="modal">
+        <h1 class="title">CASTLE DEFENSE</h1>
+        <h2>The Castle of Camelot is under attack ⚔️⚔️ </h2>
+        <p> the wizard has to battle 3 monsters to save the castle. Roll the dice to decide winners</p> 
+        <div>
+            <h2>Game Rules</h2>
+            <ul>
+                <li>There are three(3) monsters in total to be defeated</li><br>
+                <li>On each dice roll, the added outcome is subtracted from each player's health</li><br>
+                <li>After the wizard defeats each monster, another appears till the three(3) monsters is defeated</li>
+                <li>if the wizard defeats all, the castle is safe and vice versa</li><br>
+                <li>if both wizard and monsters are defeated, the game ends in a draw</li><br>
+            </ul>
+        </div>
+
+        <button id="modal-btn">PLAY GAME</button>
+    </div>
 </html>
