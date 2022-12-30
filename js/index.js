@@ -85,4 +85,4 @@ document.getElementById("modal-btn").addEventListener('click',() => {
 const wizard = new Character(characterData.hero)
 let monster = getNewMonster()
 render()
-battle.play()
+setTimeout(() => battle.play(), 100)
