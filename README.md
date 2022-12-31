@@ -1,6 +1,6 @@
 # CASTLE DEFENSE
 
-Quick start:
+Quick start here:
 
 ```
 $ npm install
